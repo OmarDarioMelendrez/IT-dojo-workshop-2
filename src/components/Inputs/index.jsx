@@ -9,17 +9,17 @@ const Input = ({ field, index, value, handleInputChange, onValidate, pendingVali
     case "text":
       return (
         <TextInput
-          // label={label}
           value={value}
           handleInputChange={handleInputChange}
           field={field}
           index={index}
+          pendingValidation={pendingValidation}
+          onValidate={onValidate}
         />
       );
     case "date":
       return (
         <DateInput
-          // label={label}
           value={value}
           handleInputChange={handleInputChange}
           field={field}
@@ -31,7 +31,6 @@ const Input = ({ field, index, value, handleInputChange, onValidate, pendingVali
     case "password":
       return (
         <PasswordInput
-          // label={label}
           value={value}
           handleInputChange={handleInputChange}
           field={field}
