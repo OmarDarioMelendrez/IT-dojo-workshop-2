@@ -1,0 +1,22 @@
+[
+    {
+      "type": "text",
+      "regex": "^[a-zA-Z0-9_]{3,20}$",
+      "placeholder": "Enter text...",
+      "label": "Text"
+    },
+    {
+      "type": "date",
+      "min_date": "1900-01-01",
+      "max_date": "2030-12-31",
+      "placeholder": "Enter date...",
+      "label": "Date"
+    },
+    {
+      "type": "password",
+      "regex": "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$",
+      "placeholder": "Enter password...",
+      "label": "Password",
+      "confirmation": true
+    }
+  ]
